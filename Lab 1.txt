@@ -1,0 +1,66 @@
+<?php
+// Lab Task 1: Variables and Data Types
+
+
+echo "=== Lab Task 1 ===\n\n";
+
+
+// 1. Declare and initialize variables of various data types
+$stringVar = "Hello, PHP!";
+$integerVar = 42;
+$floatVar = 3.14159;
+$booleanVar = true;
+
+
+echo "Variables declared:\n";
+echo "String: $stringVar\n";
+echo "Integer: $integerVar\n";
+echo "Float: $floatVar\n";
+echo "Boolean: " . ($booleanVar ? 'true' : 'false') . "\n\n";
+
+
+// 2. Perform arithmetic operations
+$num1 = 10;
+$num2 = 3;
+$floatNum1 = 15.5;
+$floatNum2 = 4.2;
+
+
+echo "Arithmetic Operations:\n";
+echo "Integer Operations ($num1 and $num2):\n";
+echo "Addition: $num1 + $num2 = " . ($num1 + $num2) . "\n";
+echo "Subtraction: $num1 - $num2 = " . ($num1 - $num2) . "\n";
+echo "Multiplication: $num1 * $num2 = " . ($num1 * $num2) . "\n";
+echo "Division: $num1 / $num2 = " . ($num1 / $num2) . "\n\n";
+
+
+echo "Float Operations ($floatNum1 and $floatNum2):\n";
+echo "Addition: $floatNum1 + $floatNum2 = " . ($floatNum1 + $floatNum2) . "\n";
+echo "Subtraction: $floatNum1 - $floatNum2 = " . ($floatNum1 - $floatNum2) . "\n";
+echo "Multiplication: $floatNum1 * $floatNum2 = " . ($floatNum1 * $floatNum2) . "\n";
+echo "Division: $floatNum1 / $floatNum2 = " . ($floatNum1 / $floatNum2) . "\n\n";
+
+
+// 3. Output sum using echo and print
+$a = 25;
+$b = 17;
+$sum = $a + $b;
+
+
+echo "Sum using echo: $a + $b = $sum\n";
+print "Sum using print: $a + $b = $sum\n\n";
+
+
+// 4. Use var_dump() to display type and value
+echo "Using var_dump() for each variable:\n";
+echo "String variable:\n";
+var_dump($stringVar);
+echo "\nInteger variable:\n";
+var_dump($integerVar);
+echo "\nFloat variable:\n";
+var_dump($floatVar);
+echo "\nBoolean variable:\n";
+var_dump($booleanVar);
+
+
+?>
