@@ -1,0 +1,74 @@
+<?php
+// Lab Task 2: Conditional Statements (if-else, switch-case)
+
+
+echo "=== Lab Task 2 ===\n\n";
+
+
+// Temperature variable
+$temperature = 22; // Change this value to test different conditions
+
+
+// Validate temperature (ensure it's a number)
+if (!is_numeric($temperature)) {
+    echo "Error: Temperature must be a numeric value!\n";
+    exit;
+}
+
+
+// If-else statement for temperature
+echo "Temperature: {$temperature}°C\n";
+
+
+if ($temperature < 10) {
+    echo "It's cold\n\n";
+} elseif ($temperature >= 10 && $temperature <= 25) {
+    echo "It's warm\n\n";
+} else {
+    echo "It's hot\n\n";
+}
+
+
+// Day of the week using switch-case
+$day = 3; // Change value from 1-7 to test different days
+
+
+// Validate day
+if (!is_numeric($day) || $day < 1 || $day > 7) {
+    echo "Error: Day must be a number between 1 and 7!\n";
+    exit;
+}
+
+
+echo "Day number: $day\n";
+echo "Day name: ";
+
+
+switch ($day) {
+    case 1:
+        echo "Monday\n";
+        break;
+    case 2:
+        echo "Tuesday\n";
+        break;
+    case 3:
+        echo "Wednesday\n";
+        break;
+    case 4:
+        echo "Thursday\n";
+        break;
+    case 5:
+        echo "Friday\n";
+        break;
+    case 6:
+        echo "Saturday\n";
+        break;
+    case 7:
+        echo "Sunday\n";
+        break;
+    default:
+        echo "Invalid day\n";
+}
+
+
+?>
